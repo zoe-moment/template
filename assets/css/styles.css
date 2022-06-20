@@ -30,7 +30,9 @@ button {
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --fs-nav: 2rem;
+    --fs-nav: clamp(1rem, 20vw, 2rem);
+    --fs-heading: clamp(1rem, 10vw, 4rem);
+    --fs-body: clamp(.5rem, 4vw, 2rem);
 
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
         0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
@@ -69,7 +71,7 @@ COLOR SCHEME -- MEDIA QUERIES
 
 
 /* -------------------------------
-SITE-WIDE SETTINGS
+SITE-WIDE SETTINGS // TYPOGRAPHY
 ----------------------------- */
 
 html {
@@ -81,6 +83,7 @@ html {
 body {
     font-family: Roboto, sans-serif;
     font-display: swap;
+    font-size: var(--fs-body);
     background-color: var(--color-bg);
     color: var(--color-fg);
 }
@@ -90,9 +93,22 @@ header {
 } */
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: var(--fs-heading);
+}
+
 h1 {
     text-align: center;
     text-shadow: #26272b;
+}
+
+.div a {
+    font-size: var(--fs-body);
 }
 
 
@@ -264,7 +280,21 @@ FOOTER
 
 }
 
+section, 
+.section__intro
+.links__info,
+.links__job-posting
 
+.div__misc,
+.div__free,
+.div__books,
+.div__tools,
+.div__info
+.div__stock,
+.div__youtube,
+.div__opensource
+.div__git.div,
+.div__job-posting
 
 
 /* ------------------
