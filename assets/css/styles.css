@@ -87,11 +87,6 @@ body {
     background-color: var(--color-bg);
     color: var(--color-fg);
 }
-/* 
-header {
-    display: flex;
-} */
-
 
 h1,
 h2,
@@ -117,6 +112,18 @@ h1 {
 NAVBAR 
 --TOGGLE 
 ----------------------------- */
+
+
+header {
+    display: flex;
+    background-color: var(--clr-footer-dark);
+    max-height: 4em;
+}
+
+header img {
+    padding:1em;
+    max-height: 100%;
+}
 
 .toggle__btn {
     padding: 2em;
@@ -235,9 +242,7 @@ NAVBAR
         visibility: visible;
         color: var(--clr-accent);
         text-decoration: underline;
-
     }
-    
 }
 
 
